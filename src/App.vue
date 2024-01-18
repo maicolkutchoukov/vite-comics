@@ -13,7 +13,9 @@ Creare un componente aggiuntivo per gestire la fascia azzurra con le icone.
 import AppHeader from './components/AppHeader.vue';
 import AppContent from './components/AppContent.vue';
 import AppMain from './components/AppMain.vue';
-import AppFooter from './components/AppFooter.vue';
+import AppFooterTop from './components/AppFooterTop.vue';
+import AppFooterBottom from './components/AppFooterBottom.vue';
+
 
 
 export default {
@@ -26,7 +28,9 @@ export default {
         AppHeader,
         AppMain,
         AppContent,
-        AppFooter
+        AppFooterTop,
+        AppFooterBottom,
+
     },  
     methods: {
 
@@ -42,7 +46,10 @@ export default {
 
     <AppMain />
 
-    <AppFooter />
+    <AppFooterTop />
+
+    <AppFooterBottom />
+
 </template>
 
 <style lang="scss">
