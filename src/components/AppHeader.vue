@@ -2,7 +2,18 @@
 export default {
     data() {
         return {
-
+            navbar: [
+                'Characters',
+                'Comics',
+                'Movies',
+                'Tv',
+                'Games',
+                'Collectibles',
+                'Videos',
+                'Fans',
+                'News',
+                'Shop'
+            ],
         };
     },
     methods: {
@@ -16,7 +27,7 @@ export default {
         <nav class="my-container">
             <img src="../assets/img/dc-logo.png" alt="Logo DC">
             <ul>
-                <li>
+                <!-- <li>
                     <a href="">
                         CHARACTERS
                     </a>
@@ -65,6 +76,9 @@ export default {
                     <a href="">
                         SHOP
                     </a>
+                </li> -->
+                <li v-for="(elem, i) in navbar" >
+                    <a href="#">{{ elem.toLocaleUpperCase() }}</a>
                 </li>
             </ul>
         </nav>
@@ -76,19 +90,20 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
     background-color: white;
-
+    img{
+        padding: 20px 0;
+    }
     ul {
         display: flex;
     }
         li{
-            padding: 10px;
+            font-size: 14px;
         }
             a{
                 text-decoration: none;
                 color: black;
-                padding: 50px 10px;
+                padding: 30px 10px 55px 10px;
 
                 &:hover{
                     color: blue;

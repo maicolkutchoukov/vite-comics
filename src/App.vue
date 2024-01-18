@@ -26,8 +26,9 @@ export default {
     },
     components: {
         AppHeader,
-        AppMain,
         AppContent,
+        AppMain,
+        
         AppFooterTop,
         AppFooterBottom,
 
@@ -42,9 +43,9 @@ export default {
 
     <AppHeader />
 
-    <AppContent />
-
     <AppMain />
+
+    <AppContent />
 
     <AppFooterTop />
 
