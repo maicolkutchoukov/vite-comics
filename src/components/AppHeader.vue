@@ -27,7 +27,7 @@ export default {
 
 <template>
     <header>
-        <nav class="container-sm d-flex justify-content-between align-items-center">
+        <nav class="container-md d-flex justify-content-between align-items-center">
             <img src="../assets/img/dc-logo.png" alt="Logo DC">
             <ul>
                 <li v-for="(elem, i) in navbar" 
@@ -66,7 +66,7 @@ nav {
             padding: 10px 10px;
             transition: all .5s ease-in-out;
             font-weight: bold;
-            
+
             &:hover {
                 color: blue;
                 background-color: lightgray;
