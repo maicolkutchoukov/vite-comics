@@ -83,7 +83,7 @@ export default {
     },
     components: {
         AppSingleComic,
-    }
+    },
 }
 </script>
 
@@ -130,6 +130,7 @@ export default {
             text-decoration: none;
             text-transform: uppercase;
             font-weight: bold;
+            cursor: pointer;
         }
         .load-button{
             font-size: 20px;
@@ -140,6 +141,7 @@ export default {
             font-weight: bold;
             text-decoration: none;
             border-radius: 5px;
+            cursor: pointer;
         }
     }
 
