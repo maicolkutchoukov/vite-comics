@@ -36,24 +36,24 @@ export default {
 <template>
     <main>
         <div class="container-md ">
-            <div class="row justify-content-between">
-                <div class="col-12 col-md-2 d-flex flex-column flex-md-row justify-content-center g-5">
+            <div class="row justify-content-between align-items-center">
+                <div class="my-col d-flex flex-column flex-md-row justify-content-center ">
                     <img src="../assets/img/buy-comics-digital-comics.png" alt="">
                     <div>DIGITAL COMICS</div>
                 </div>
-                <div class="col-12 col-md-2 d-flex flex-column flex-md-row justify-content-center g-5">
+                <div class="my-col d-flex flex-column flex-md-row justify-content-center ">
                     <img src="../assets/img/buy-comics-merchandise.png" alt="">
                     <div>DC MERCHANDISE</div>
                 </div>
-                <div class="col-12 col-md-2 d-flex flex-column flex-md-row justify-content-center g-5">
+                <div class="my-col d-flex flex-column flex-md-row justify-content-center ">
                     <img src="../assets/img/buy-comics-subscriptions.png" alt="">
                     <div>SUBSCRIPTION</div>
                 </div>
-                <div class="col-12 col-md-2 d-flex flex-column flex-md-row justify-content-center g-5">
+                <div class="my-col d-flex flex-column flex-md-row justify-content-center ">
                     <img src="../assets/img/buy-comics-shop-locator.png" alt="">
                     <div>COMIC SHOP LOCATOR</div>
                 </div>
-                <div class="col-12 col-md-2 d-flex flex-column flex-md-row justify-content-center g-5">
+                <div class="my-col d-flex flex-column flex-md-row justify-content-center ">
                     <img src="../assets/img/buy-dc-power-visa.svg" alt="">
                     <div>DC POWER VISA</div>
                 </div>
@@ -73,25 +73,28 @@ main{
 }
 .row {
     padding: 45px 0;
-        .col-12{
+        .my-col{
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
             &:nth-child(4){
                 img{
-                    width: 40%;
+                    width: 25%;
                 }
             }
             img{
-                width: 50%;
+                width: 30%;
             }
             div{
                 display: inline-block;
-                padding: 20px;
+                padding: 10px;
+                font-size: 12px;
             }
 }
 }
-
+.my-col{
+    width: calc(100%/5);
+}
 
 </style>
