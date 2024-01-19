@@ -27,16 +27,19 @@ export default {
 
 <template>
     <header>
-        <nav class="my-container">
+        <nav class="container-sm d-flex justify-content-between align-items-center">
             <img src="../assets/img/dc-logo.png" alt="Logo DC">
             <ul>
-                <li v-for="(elem, i) in navbar" >
-                    <a :class="{
-                        'active' : i == activePage
-                        }" href="#"
-                        @click="chageCurrentPage(i)">
+                <li v-for="(elem, i) in navbar" 
+                >
+                    <a href="#"
+                        @click="chageCurrentPage(i)"
+                        :class="{
+                        'active': i == activePage
+                        }">
                             {{ elem.toLocaleUpperCase() }}
                     </a>
+                    <div v-if="activePage == i" class="active-page"></div>
                 </li>
             </ul>
         </nav>
@@ -48,32 +51,37 @@ header{
     width: 100%;
 }
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
     img{
         padding: 20px 0;
     }
     li{
         font-size: 14px;
         display: inline-block;
-        
+        position: relative;
+        padding: 10px 0;
     
         a{
             text-decoration: none;
             color: black;
-            padding: 30px 10px 62px 10px;
-            /* transition: all .5s ease-in-out; */
-
-            &:hover 
-            /* &.active */{
+            padding: 10px 10px;
+            transition: all .5s ease-in-out;
+            font-weight: bold;
+            
+            &:hover {
                 color: blue;
+                background-color: lightgray;
             }
         }
     }            
 }
+.active-page{
+    width: 100%;
+    height: 7px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+}
 .active{
-    border-bottom: 8px solid blue;
+    color: blue;
 }
 </style>

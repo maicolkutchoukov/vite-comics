@@ -78,7 +78,6 @@ export default {
                     "type": "graphic novel",
                 },
             ]
-
         };
     },
     components: {
@@ -89,35 +88,31 @@ export default {
 
 <template>
     <div class="content">
-        <div class="my-container">
+        <div class="container-sm">
             <a class="current-series-button" href="">Current series</a>
-            <AppSingleComic
-            v-for="(comic, i) in comics" 
+            <div class="row justify-content-center">
+                <AppSingleComic
+                v-for="(comic, i) in comics" 
                 :singleComic = comic
             />
             <a class="load-button">
                 LOAD MORE
             </a>
+            </div>
+            
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/mixins.scss' as *;
-.my-container{
-    @include container;
-}
 
 .content{
     background-color: black;
     color: white;
-    .my-container {
+    .container-sm {
         padding-top: 60px;
         font-size: 30px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
         position: relative;
 
         .current-series-button{
@@ -133,6 +128,7 @@ export default {
             cursor: pointer;
         }
         .load-button{
+            width: auto;
             font-size: 20px;
             padding: 10px 50px;
             margin: 50px 0;

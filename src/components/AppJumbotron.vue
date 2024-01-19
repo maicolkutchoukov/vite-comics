@@ -12,20 +12,18 @@ export default {
 
 <template>
     <div class="jumbotron">
-<!--         <img src="../assets/img/jumbotron.jpg" alt=""> -->
     </div>
 </template>
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/mixins.scss' as *;
-.my-container{
-    @include container;
-}
-
 .jumbotron{
     background-image: url('../assets/img/jumbotron.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 400px;
+    min-height: 400px;
+    max-height: 400px;
+
 }
 </style>

@@ -49,11 +49,11 @@ export default {
 
 <template>
     <footer>
-        <div class="my-container">
-            <div class="my-row">
-                <div class="my-col-5">
-                    <div class="my-row">
-                        <div class="my-col">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 col-md-6">
+                    <div class="row">
+                        <div class="col-auto">
                             <div>
                                 <span>
                                     DC COMICS
@@ -77,7 +77,7 @@ export default {
                                 </ul>
                             </div>
                         </div>
-                        <div class="my-col">
+                        <div class="col-auto">
                             <div>
                                 <span>
                                     DC
@@ -91,7 +91,7 @@ export default {
                                 </ul>
                             </div>
                         </div>
-                        <div class="my-col">
+                        <div class="col-auto">
                             <div>
                                 <span>
                                     SITES
@@ -107,7 +107,7 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div class="my-col-7">
+                <div class="col-7 col-md-6">
                     
                 </div>
             </div>
@@ -117,7 +117,6 @@ export default {
 
 <style lang="scss" scoped>
 footer{
-    min-height: 400px;
     background-image: url('../assets/img/footer-bg.jpg');
     background-size: cover;
     color: white;
@@ -129,28 +128,23 @@ footer{
             color: white;
         }
     }
-    .my-row{
-            display: flex;
-            justify-content: space-between;
-            .my-col-5{
-                width: calc(100%/12)*5;
+    .row {
+            .col-5 {
                 padding: 40px 0;
             }
-            .my-col-7{
-                width: calc(100%/12)*7;
+            .col-7 {
                 background-image: url('../assets/img/dc-logo-bg.png');
                 background-repeat: no-repeat;
                 background-position-x: 55%;
                 background-position-y: 55%;
             }
-            .my-col{
-                flex-grow: 1;
+            .col-auto {
                 div{
-                    span{
+                    span {
                         font-size: 25px;
                     }
                     padding: 10px 0;
-                    ul{
+                    ul {
                         padding: 10px 0;
                         li{
                             padding: 2px 0;
