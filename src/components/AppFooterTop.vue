@@ -2,7 +2,8 @@
 export default {
     data() {
         return {
-            comics:[
+            comics:
+            [
                 'Characters',
                 'Comics',
                 'Movies',
@@ -11,7 +12,8 @@ export default {
                 'Videos',
                 'News'
             ],
-            dc:[
+            dc:
+            [
                 'Term Of Use',
                 'Privacy policy (New)',
                 'Ad Choise',
@@ -24,11 +26,13 @@ export default {
                 'Shop Help',
                 'Contact Us'
             ],
-            shop:[
+            shop:
+            [
                 'Shop DC',
                 'Shop DC Collectibles'
             ],
-            sites:[
+            sites:
+            [
                 'DC',
                 'MAD Magazine',
                 'DC Kids',
@@ -142,6 +146,9 @@ footer{
             .my-col{
                 flex-grow: 1;
                 div{
+                    span{
+                        font-size: 25px;
+                    }
                     padding: 10px 0;
                     ul{
                         padding: 10px 0;

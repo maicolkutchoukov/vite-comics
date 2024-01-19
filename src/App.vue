@@ -11,6 +11,8 @@ Creare un componente aggiuntivo per gestire la fascia azzurra con le icone.
 
 <script>
 import AppHeader from './components/AppHeader.vue';
+import AppJumbotron from './components/AppJumbotron.vue';
+
 import AppContent from './components/AppContent.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooterTop from './components/AppFooterTop.vue';
@@ -26,9 +28,9 @@ export default {
     },
     components: {
         AppHeader,
+        AppJumbotron,
         AppContent,
-        AppMain,
-        
+        AppMain,     
         AppFooterTop,
         AppFooterBottom,
 
@@ -43,6 +45,8 @@ export default {
 
     <AppHeader />
 
+    <AppJumbotron />
+    
     <AppMain />
 
     <AppContent />
